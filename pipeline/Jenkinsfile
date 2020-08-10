@@ -15,11 +15,11 @@ pipeline {
          steps{
            sh 'touch file3'
 }   
+      }
        stage('Dockercommands') {
          steps{
            sh 'docker build -t demo .'
-}   
+       }   
+    }
+  }
 }
-}
-}
-
