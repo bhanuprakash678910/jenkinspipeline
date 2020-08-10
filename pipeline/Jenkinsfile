@@ -17,10 +17,13 @@ pipeline {
 }   
       }
        stage('Dockercommands') {
-          dir("pipeline")
+           {
          steps{
+            dir("pipeline") {
            sh 'docker build -t demo .'
-       }   
+           } 
+        }
+       
     }
   }
 }
