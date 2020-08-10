@@ -17,6 +17,7 @@ pipeline {
 }   
       }
        stage('Dockercommands') {
+          dir("pipeline")
          steps{
            sh 'docker build -t demo .'
        }   
